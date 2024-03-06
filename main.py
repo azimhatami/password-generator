@@ -5,6 +5,7 @@
 import random
 import string
 import os
+from time import sleep
 
 
 settings = {
@@ -24,11 +25,9 @@ def clear_screen():
     os.system('clear')
 
 
-def show_welcome_messag():
+def show_welcome_message():
     print('Welcome to the Random Password Generatore.')
-    print('Written by Azim Hatami.')
-
-
+    print('\n', '-' * 18, '\n')
 
 def get_user_password_length(option,
                              defult,
@@ -84,7 +83,7 @@ def ask_if_change_settings(settings):
                             '(y: yes, n: no, enter: yes): ')
         if user_answer in ['y', 'n', '']:
             if user_answer in ['y', '']:
-                print('-' * 5, 'Change Settings', '-' * 5, sep='')
+                print('\n', '-' * 5, 'Change Settings', '-' * 5, '\n', sep='')
                 get_settings_from_users(settings)
             break
         else:
@@ -162,10 +161,10 @@ def password_generator_loop(settings):
             break
 
 
-def run():
+if __name__ == '__main__':
     clear_screen()
+    show_welcome_message()
     ask_if_change_settings(settings)
     password_generator_loop(settings)
-    print('Thank you or chooosing us.')
+    print('Thank you for chooosing us.')
 
-run()
