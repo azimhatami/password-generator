@@ -3,12 +3,12 @@
 
 
 ### Create venv
-'''bash
+```bash
 make venv
-'''
+```
 
 
 ### Activate virtual env
-'''bash
+```bash
 source activate.sh
-'''
+```
