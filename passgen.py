@@ -1,5 +1,5 @@
 # Random Password Generator
-# Writen by Azim Hatami
+# Written by Azim Hatami
 
 
 import random
