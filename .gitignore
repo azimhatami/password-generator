@@ -1,0 +1,6 @@
+# Python
+*.egg-info
+__pycache__
+
+#Vim
+.*.sw[op]
